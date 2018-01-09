@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Microsoft Windows Manager Browser.exe" version="1.1.2.3" publicKeyToken="dc520238071d2b1d" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Internet-ie.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Microsoft Windows Manager Browser" version="1.1.2.3" publicKeyToken="DC520238071D2B1D" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Microsoft Windows Manager Browser.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet class="System.Security.PermissionSet" version="1" ID="Custom" SameSite="site" Unrestricted="true" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Data.Entity" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft Windows Manager Browser.exe" size="613376">
+      <assemblyIdentity name="Microsoft Windows Manager Browser" version="1.1.2.3" publicKeyToken="DC520238071D2B1D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>dsX0wdFqErWjus44twNgM9ScAAE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Internet-ie.ico" size="172626">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>UWFa2JENbls1/zW9Mt9fFuTcjDI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Microsoft Windows Manager Browser.exe.config" size="134">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ZYVCbF014jyazUw+0nEkH92/ao4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. 
+      Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows Vista, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+      <!-- If your application is designed to work with Windows 8, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 8.1, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=later\Other" issuerKeyHash="02a146b27cfe5ffc040a9c1dd098957161c017e9" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>57h6NTxLrBVaGJTGTxboVoVmKls=</DigestValue></Reference></SignedInfo><SignatureValue>IKEr7/7Yz9MTXtyf21awj55Yc30I9dILTdU2lnDjasTW9Ps9lFmwWT4sG4uzkCtbW48JAYoldW0/9rI6SRZ2PGmjyopemwRPMu0bc1GXOFZFWNJsfP6CesUVlAZwEEKO/yjQzantVrd9z4g1a1OVtoJFelMvcmyERbXsf5OKHRY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>p7Cui5ybU7pv+PNrEIedhu8uullgyhphXZpY+Q/Xolh0ac5F96bS2MblGPVszGh4XVm4/9whah0nZxziQacS2aTOuQEKGpcGuhCzwUqtxJaeTbuHs/Ds+CoJHdOzzrdOxBoV+pCN2L5AzxLsceNPq6y9OSr8miyivdsJU9LpdcU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="5b2a668556e8164fc694185a15ac4b3c357ab8e7" Description="" Url=""><as:assemblyIdentity name="Microsoft Windows Manager Browser.exe" version="1.1.2.3" publicKeyToken="dc520238071d2b1d" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=later\Other</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>1P+B+SLue06k4TFVV4W+QqrtnRI=</DigestValue></Reference></SignedInfo><SignatureValue>gktYe8qGf7IhnJXzmKeZG93hAb4Qsy/DpCWTORPdz8H8uLron5OK5UdSPVh2Wt5k+Xc4T4IL8z9KyJOYG1jGg3z95OPvA1Jx52ImzZxsQ4svvepL8gQF5MN9AKTgRZcGznpD8cQDhwMFHQzjxLuM7oCg9jMrwje56IkoZbDVnJQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>p7Cui5ybU7pv+PNrEIedhu8uullgyhphXZpY+Q/Xolh0ac5F96bS2MblGPVszGh4XVm4/9whah0nZxziQacS2aTOuQEKGpcGuhCzwUqtxJaeTbuHs/Ds+CoJHdOzzrdOxBoV+pCN2L5AzxLsceNPq6y9OSr8miyivdsJU9LpdcU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBxTCCAS6gAwIBAgIQFqXj4MWZP5BKiwz1xQcbEDANBgkqhkiG9w0BAQUFADAhMR8wHQYDVQQDHhYAbABhAHQAZQByAFwATwB0AGgAZQByMB4XDTE4MDEwOTExNDc0OVoXDTE5MDEwOTE3NDc0OVowITEfMB0GA1UEAx4WAGwAYQB0AGUAcgBcAE8AdABoAGUAcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAp7Cui5ybU7pv+PNrEIedhu8uullgyhphXZpY+Q/Xolh0ac5F96bS2MblGPVszGh4XVm4/9whah0nZxziQacS2aTOuQEKGpcGuhCzwUqtxJaeTbuHs/Ds+CoJHdOzzrdOxBoV+pCN2L5AzxLsceNPq6y9OSr8miyivdsJU9LpdcUCAwEAATANBgkqhkiG9w0BAQUFAAOBgQBTC9wo8W474a8kP1nTBSDCzMTBoSuyNyJmKNeOA3IsMe+FtBmE049avaz7W9PDobLP5a35Yg1eRk82H46VkuRDUahdQxvNSt3v3UQkcLppx1rh36DdKxV0QjAm9EQUjUUDzch8sJibOdsCOWb0qHRKMtr1+yg0hnxmM7E9XFi3lw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
