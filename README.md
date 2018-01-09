@@ -1,5 +1,4 @@
  MicrosoftWindowsManagerBrowser
 # Microsoft Windows Manager Browser
 
-
-![web](https://github.com/Create-Browser/MicrosoftWindowsManagerBrowser/blob/master/web.PNG)
+![web](https://raw.githubusercontent.com/Create-Browser/MicrosoftWindowsManagerBrowser/master/web.PNG)
