@@ -4,7 +4,7 @@
 Name = Microsoft Windows Manager Browser
 Category = Browser
 ProductVersion = 1.1.1.1
-URL = http://www.example.com/downloads/Microsoft Windows Manager Browser.exe
+URL = https://create-browser.github.io/MicrosoftWindowsManagerBrowser/app.manifest/setup.exe
 URL1 = https://create-browser.github.io/MicrosoftWindowsManagerBrowser/app.manifest/setup.exe
 Size = 462336
 MD5 = 153533f19cff3860440521afbf7f9850
