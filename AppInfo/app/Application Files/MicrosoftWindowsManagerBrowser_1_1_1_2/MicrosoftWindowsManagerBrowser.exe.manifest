@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="MicrosoftWindowsManagerBrowser.exe" version="1.1.1.2" publicKeyToken="f22899cf88ef460c" language="en-US" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="MicrosoftEdgeLauncher.ico" asmv2:publisher="Microsoft Windows Manager Browser" co.v1:suiteName="@MicrosoftWindowsManagerBrowser" asmv2:product="#Microsoft Windows Manager Browser" asmv2:supportUrl="https://createbrowser.github.io/MicrosoftWindowsManagerBrowser/" co.v1:errorReportUrl="https://createbrowser.github.io/MicrosoftWindowsManagerBrowser/404.html" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="MicrosoftWindowsManagerBrowser" version="1.1.1.2" language="neutral" processorArchitecture="x86" />
+    <commandLine file="MicrosoftWindowsManagerBrowser.exe" parameters="" />
+  </entryPoint>
+  <co.v1:useManifestForTrust xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet class="System.Security.PermissionSet" version="1" ID="Custom" SameSite="site">
+          <IPermission class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Read="USERNAME" />
+          <IPermission class="System.Security.Permissions.FileDialogPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+          <IPermission class="System.Security.Permissions.IsolatedStorageFilePermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Allowed="AssemblyIsolationByUser" UserQuota="9223372036854775807" Expiry="9223372036854775807" Permanent="True" />
+          <IPermission class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="ReflectionEmit" />
+          <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="Assertion, Execution, BindingRedirects" />
+          <IPermission class="System.Security.Permissions.UIPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+          <IPermission class="System.Net.DnsPermission, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+          <IPermission class="System.Drawing.Printing.PrintingPermission, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="1" Level="DefaultPrinting" />
+          <IPermission class="System.Security.Permissions.MediaPermission, WindowsBase, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="1" Audio="SafeAudio" Video="SafeVideo" Image="SafeImage" />
+          <IPermission class="System.Security.Permissions.WebBrowserPermission, WindowsBase, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="1" Level="Safe" />
+        </PermissionSet>
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Data.Entity" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MicrosoftWindowsManagerBrowser.exe" size="461712">
+      <assemblyIdentity name="MicrosoftWindowsManagerBrowser" version="1.1.1.2" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>bYAMRqpoZdYF0rxptAu0X9dAzKU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Internet-ie.ico" size="172626">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>UWFa2JENbls1/zW9Mt9fFuTcjDI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="MicrosoftEdgeLauncher.ico" size="21709">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Em0y9XcZuiJvktkJrUUiQdMm65E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="MicrosoftWindowsManagerBrowser.exe.config" size="134">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ZYVCbF014jyazUw+0nEkH92/ao4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. 
+      Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows Vista, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+      <!-- If your application is designed to work with Windows 8, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 8.1, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=Notify\Credit" issuerKeyHash="947683fc6c46517939c7bb87875a7940ecacb1ee" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>QXmxHcMg2jnR1ETWjOPb1MTc1Bc=</DigestValue></Reference></SignedInfo><SignatureValue>tXtB9qD6tKZRaqoQnfkXEm80aL3OeBrLjbQGkw3LaVNkhRwZ09UcDMTCjBQ8xvR9is/uejgU0vWh2cTTJSFyHT+8ZJTMnh8ymSaF+sHYlrrfO5e8r7lItpXtEUtUBiyKung9zKT71DS/WTtnQFYvI/1b2pzdJRV037KA7kgTK7w=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>yWfYp7uUeXdEvTJt3au0zupkLFUfkXQzDVPbvirdReSuwwAxHw8KNTXaexIivHupE7QSnIRkS3isLROnb93R+zmgZnbQWdOInjpQsU5wNXUfCJ1g3h70qaH+756a8aIu/5d9JomuaXC2eNfPb0jKqQ2K6cE5fi9Urhk9olgXNJE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="17d4dcc4d4dbe38cd644d4d139da20c31db17941" Description="" Url=""><as:assemblyIdentity name="MicrosoftWindowsManagerBrowser.exe" version="1.1.1.2" publicKeyToken="f22899cf88ef460c" language="en-US" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Notify\Credit</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>BByjxlphTWE1KB6dsXIfN6JPG2w=</DigestValue></Reference></SignedInfo><SignatureValue>qe53xUq3ewvaHF0NLTqB3vXfvRcUqyql3p0i0lun/Ckvg6vgHaDHr8d3BsURxjauFbP5704OESnz6YJlaPsCdhokyh1xhVuzpXDn8w+LQumsbKv90oe8qjX2u4DCSZQs563YJKrkHNSjNNpz1LYkI17r/TVXle/wjkh26U978Jo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>yWfYp7uUeXdEvTJt3au0zupkLFUfkXQzDVPbvirdReSuwwAxHw8KNTXaexIivHupE7QSnIRkS3isLROnb93R+zmgZnbQWdOInjpQsU5wNXUfCJ1g3h70qaH+756a8aIu/5d9JomuaXC2eNfPb0jKqQ2K6cE5fi9Urhk9olgXNJE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBzTCCATagAwIBAgIQUsxb6Uw49qhBRg95Th6vyTANBgkqhkiG9w0BAQUFADAlMSMwIQYDVQQDHhoATgBvAHQAaQBmAHkAXABDAHIAZQBkAGkAdDAeFw0xOTA3MDkxMjUzMTRaFw0yMDA3MDgxODUzMTRaMCUxIzAhBgNVBAMeGgBOAG8AdABpAGYAeQBcAEMAcgBlAGQAaQB0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJZ9inu5R5d0S9Mm3dq7TO6mQsVR+RdDMNU9u+Kt1F5K7DADEfDwo1Ndp7EiK8e6kTtBKchGRLeKwtE6dv3dH7OaBmdtBZ04ieOlCxTnA1dR8InWDeHvSpof7vnprxoi7/l30mia5pcLZ4189vSMqpDYrpwTl+L1SuGT2iWBc0kQIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAIjFkq2Rh5g30mQ20et2JG7Bo8BkL4wfg6QiwlYJ3R8fs/EgymnwYTxq8JuJJm+2lIWhh+KYagtksiGlJAjMYTHI+uVB52T4LiUQozymn8YWRn1R1VsaPMPbBf7lhDbaIJJBNHGPMI430/DaWVF+i+iqzUuoYSKTAI3GwgusmRz2</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
